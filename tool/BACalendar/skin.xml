@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0">
+  <info>
+    <version>1.0</version>
+    <author>hatotank</author>
+    <email>hatotank@gmail.com</email>
+    <homepage>https://github.com/hatotank/make_BACalendar</homepage>
+    <screenshot>images/screenshot.png</screenshot>
+    <comment>Reproduction of the calendar section of the BLUE ARCHIVE 2023 DESK CALENDAR. See the github wiki for more information.</comment>
+    <history>
+      <version value="1.0">Initial version</version>
+    </history>
+  </info>
+
+  <variables>
+    <variable name="Base_color" default="black" values="black;white;" description="Define the base color of the calendar." />
+    <cariable name="Show_Today_Schale_icon" default="true" type="boolean"  description="If unchecked, the S.C.H.A.L.E icon will be hidden from the calendar." />
+    <variable name="Month_color" default="white" values="black;white;blue;brown;cyan;green;grey;magenta;pink;red;yellow;orange;" description="Define string color." />
+    <variable name="Month-year_color" default="white" values="black;white;blue;brown;cyan;green;grey;magenta;pink;red;yellow;orange;" description="Define string color." />
+    <variable name="Text_Blue_archive_color" default="white" values="black;white;blue;brown;cyan;green;grey;magenta;pink;red;yellow;orange;" description="Define string color" />
+    <variable name="Text_Blue_archive_transparency" default="210" type="string" description="Defines the opacity of the window backgrounds. Use values between 0 and 255." />
+    <!--variable name="Text_Blue_archive_font_style" default="normal" values="normal;italic;" description="Define font style." /-->
+    <variable name="Month_transparency" default="210" type="string" description="Defines the opacity of the window backgrounds. Use values between 0 and 255." />
+    <variable name="Month-year_transparency" default="210" type="string" description="Defines the opacity of the window backgrounds. Use values between 0 and 255." />
+  </variables>
+
+  <include file="xml/elements.xml" />
+  <include file="xml/category.xml" />
+  <include file="xml/calendar_jp.xml" />
+  <include file="xml/calendar_global.xml" />
+  <include file="xml/calendar_parts_month_year.xml" />
+  <include file="xml/calendar_parts_text_blue_archive.xml" />
+  <include file="xml/tooltip.xml" />
+
+</skin>

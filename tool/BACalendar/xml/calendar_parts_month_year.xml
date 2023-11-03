@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0">
+  <window id="Calendar_parts_month_year" w="600" h="180">
+    <time x="220" y="0" element="font.month" color="color.month.%Month_color%" format="%m" showmonth="0" align="TOP-RIGHT" />
+    <time x="220" y="30" element="font.month-year" color="color.month-year.%Month-year_color%" format="%B-%Y" showmonth="0" align="TOP-LEFT" />
+  </window>
+</skin>

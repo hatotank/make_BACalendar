@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0">
+  <window id="Calendar_parts_text_blue_archive" w="890" h="170">
+  <!--window id="Calendar_parts_text_blue_archive" w="920" h="170" --><!--#Size required for font italic#-->
+    <text x="0" y="-20" element="font.bluearchive.normal" text="BLUE ARCHIVE" color="color.text.%Text_Blue_archive_color%" align="TOP-LEFT" />
+  </window>
+</skin>

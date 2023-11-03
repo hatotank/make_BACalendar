@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0">
+  <window id="Calendar_global" w="1260" h="100">
+    <calendar id="current month" w="1230" h="60" x="10" y="10" layout="HORIZONTAL">
+      <days>
+        <appearance priority="-1" element="font.days" color="color.days.%Base_color%" align="TOP-CENTER"/>
+      </days>
+      <today>
+        <appearance element="font.days" color="color.todays.%Base_color%" align="TOP-CENTER" priority="101"/>
+        <appearance visible="%Show_Today_Schale_icon%" layer="101" element="bitmap.today.icon.%Base_color%" showalways="1" offset="0,-45" align="CENTER"/>
+        <appearance target="1" element="bitmap.today.bg.%Base_color%" layer="-10" offset="0,-2"/>
+      </today>
+      <weekends>
+        <appearance element="font.weekend_sunday" color="color.weekend_sunday" align="TOP-CENTER"/>
+      </weekends>
+      <weekdays>
+        <appearance element="bitmap.weekdays.Global.%Base_color%" align="BOTTOM-CENTER"/>
+      </weekdays>
+    </calendar>
+  </window>
+</skin>

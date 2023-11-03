@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0">
+  <tooltip id="Tooltip" threshold="48" textmargins="15, 20, 55, 25" offset="22,0">  
+    <background element="bitmap.tooltip" margins="40, 15, 15, 15" scaling="TILE" origin1="TOP-LEFT" x1="0" y1="0" origin2="BOTTOM-RIGHT" x2="0" y2="0" />
+    <header>
+      <appearance element="font.tooltip.bold" color="color.tooltip.header" align="TOP-LEFT" />
+    </header>
+    <separator padding="0, 10, 0, 10" /> 
+  </tooltip>
+</skin>

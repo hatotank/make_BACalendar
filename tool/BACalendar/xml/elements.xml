@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skin version="1.0">
+  <elements>
+    <bitmap id="bitmap.weekdays.jp.black" file="images/Weekdays-JP_Black.png" frames="7" opacity="80" />
+    <bitmap id="bitmap.weekdays.jp.white" file="images/Weekdays-JP_White.png" frames="7" opacity="80" />
+    <bitmap id="bitmap.weekdays.Global.black" file="images/Weekdays-Global_Black.png" frames="7" opacity="80" />
+    <bitmap id="bitmap.weekdays.Global.white" file="images/Weekdays-Global_White.png" frames="7" opacity="80" />
+    <bitmap id="bitmap.today.icon.black" file="images/today-black.png" opacity="80" />
+    <bitmap id="bitmap.today.icon.white" file="images/today-white.png" opacity="80" />
+    <bitmap id="bitmap.tooltip" file="images/tooltip.png" frames="4" />
+    <bitmap id="bitmap.event.bg" file="images/event-bg.png" opacity="1" />
+    <bitmap id="bitmap.today.bg.black" file="images/today-bg-black.png" opacity="70" />
+    <bitmap id="bitmap.today.bg.white" file="images/today-bg-white.png" opacity="70" />
+    
+    <font id="font.days" facename="Neue Haas Grotesk Text Pro" size="16" weight="BOLD" />
+    <font id="font.weekend_saturday" facename="Neue Haas Grotesk Text Pro" size="16" weight="BOLD" />
+    <font id="font.weekend_sunday" facename="Neue Haas Grotesk Text Pro" size="16" weight="BOLD" />
+    <font id="font.month" facename="Impact" size="128" style="ITALIC" />
+    <font id="font.month-year" facename="Bahnschrift" size="36" style="ITALIC" weight="LIGHT" />
+    <font id="font.bluearchive.normal" facename="Impact" size="120" />
+    <font id="font.bluearchive.italic" facename="Impact" size="120" style="ITALIC" />
+    <font id="font.tooltip.bold" facename="Trebuchet MS" weight="BOLD" size="9" />
+
+    <solid id="color.gray" color="20,20,20,255" />
+  </elements>
+
+  <colors>
+    <color id="color.todays.white" rgba="0,0,0,250" />
+    <color id="color.todays.black" rgba="255,255,255,250" />
+    <color id="color.days.black" rgba="0,0,0,190" />
+    <color id="color.days.white" rgba="255,255,255,190" />
+    <color id="color.weekend_saturday" rgba="0,130,200,190" />
+    <color id="color.weekend_sunday" rgba="249,0,23,190" />
+    <color id="color.holiday" rgba="249,0,23,190" />
+    <color id="color.tooltip.header" rgba="118,123,127,255" />
+
+    <!-- calendar_parts_month_year:mm -->
+    <color id="color.month.black" rgba="0,0,0,%Month_transparency%" />
+    <color id="color.month.white" rgba="255,255,255,%Month_transparency%" />
+    <color id="color.month.blue" rgba="50,50,255,%Month_transparency%" />
+    <color id="color.month.brown" rgba="255,125,0,%Month_transparency%" />
+    <color id="color.month.cyan" rgba="50,255,255,%Month_transparency%" />
+    <color id="color.month.green" rgba="50,255,50,%Month_transparency%" />
+    <color id="color.month.grey" rgba="150,150,150,%Month_transparency%" />
+    <color id="color.month.magenta" rgba="255,50,255,%Month_transparency%" />
+    <color id="color.month.pink" rgba="255,50,150,%Month_transparency%" />
+    <color id="color.month.red" rgba="255,50,50,%Month_transparency%" />
+    <color id="color.month.yellow" rgba="255,255,50,%Month_transparency%" />
+    <color id="color.month.orange" rgba="255,165,0,%Month_transparency%" />
+    <!-- calendar_parts_month_year:mmmm-yyyy -->
+    <color id="color.month-year.black" rgba="0,0,0,210" />
+    <color id="color.month-year.white" rgba="255,255,255,%Month-year_transparency%" />
+    <color id="color.month-year.blue" rgba="50,50,255,%Month-year_transparency%" />
+    <color id="color.month-year.brown" rgba="255,125,0,%Month-year_transparency%" />
+    <color id="color.month-year.cyan" rgba="50,255,255,%Month-year_transparency%" />
+    <color id="color.month-year.green" rgba="50,255,50,%Month-year_transparency%" />
+    <color id="color.month-year.grey" rgba="150,150,150,%Month-year_transparency%" />
+    <color id="color.month-year.magenta" rgba="255,50,255,%Month-year_transparency%" />
+    <color id="color.month-year.pink" rgba="255,50,150,%Month-year_transparency%" />
+    <color id="color.month-year.red" rgba="255,50,50,%Month-year_transparency%" />
+    <color id="color.month-year.yellow" rgba="255,255,50,%Month-year_transparency%" />
+    <color id="color.month-year.orange" rgba="255,165,0,%Month-year_transparency%" />
+    <!-- calendar_partstext:BLUE ARCHIVE -->
+    <color id="color.text.black" rgba="0,0,0,%Text_Blue_archive_transparency%" />
+    <color id="color.text.white" rgba="255,255,255,%Text_Blue_archive_transparency%" />
+    <color id="color.text.blue" rgba="50,50,255,%Text_Blue_archive_transparency%" />
+    <color id="color.text.brown" rgba="255,125,0,%Text_Blue_archive_transparency%" />
+    <color id="color.text.cyan" rgba="50,255,255,%Text_Blue_archive_transparency%" />
+    <color id="color.text.green" rgba="50,255,50,%Text_Blue_archive_transparency%" />
+    <color id="color.text.grey" rgba="150,150,150,%Text_Blue_archive_transparency%" />
+    <color id="color.text.magenta" rgba="255,50,255,%Text_Blue_archive_transparency%" />
+    <color id="color.text.pink" rgba="255,50,150,%Text_Blue_archive_transparency%" />
+    <color id="color.text.red" rgba="255,50,50,%Text_Blue_archive_transparency%" />
+    <color id="color.text.yellow" rgba="255,255,50,%Text_Blue_archive_transparency%" />
+    <color id="color.text.orange" rgba="255,165,0,%Text_Blue_archive_transparency%" />
+  </colors>
+
+  <categories>
+    <category id="Japanese_Saturday_Blue">
+      <appearance target="1" element="font.weekend_saturday" color="color.weekend_saturday" align="TOP-CENTER"/>
+    </category>
+    <category id="Japanese_Holidays">
+      <appearance target="1" element="font.weekend_saturday" color="color.holiday" align="TOP-CENTER"/>
+    </category>
+  </categories>
+
+</skin>

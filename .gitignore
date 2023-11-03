@@ -1,0 +1,8 @@
+*.ics
+/tool/temp/etc/*.png
+/tool/temp/halo/*.png
+/tool/temp/icon/*.png
+/tool/BACalendar/images/icons/*.png
+/tool/BACalendar/images/today-black.png
+/tool/BACalendar/images/today-white.png
+/tool/BACalendar/xml/category.xml
