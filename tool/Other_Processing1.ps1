@@ -52,5 +52,7 @@ $ia.SetColorMatrix($colorMatrixElements)
 $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
 $graphics.DrawImage($img_src, (New-Object System.Drawing.Rectangle(0, 0, $WIDTH, $HEIGHT)),0,0,$img_src.Width,$img_src.Height,[System.Drawing.GraphicsUnit]::Pixel,$ia)
 $img_dst.Save(($OUTPUT_DIR + "today-white.png"), [System.Drawing.Imaging.ImageFormat]::Png)
+$img_dst.Dispose()
+$img_src.Dispose()
 
 Write-Host "end processing"

@@ -19,6 +19,8 @@ foreach ($item in $objitems)
     $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
     $graphics.DrawImage($img_src, (New-Object System.Drawing.Rectangle(0, 0, $img_dst.Width, $img_dst.Height)))
     $img_dst.Save(($OUTPUT_DIR + $item.Name.Replace("_","-").ToLower()), [System.Drawing.Imaging.ImageFormat]::Png)
+    $img_dst.Dispose()
+    $img_src.Dispose()
     $i++
 }
 Write-Host "end resize"
