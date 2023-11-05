@@ -1,9 +1,9 @@
 # ｍake_BACalendar
-BLUE ARCHIVE 2023 DESK CALENDARのカレンダー部分を  
-Rainlendar(https://www.rainlendar.net)  
-のスキンでそれっぽく再現させようとします。
+ブルアカの2023デスクカレンダーのカレンダー部分を  
+[Rainlendar](https://www.rainlendar.net)のスキンでそれっぽく再現させようとします。  
+※BLUE ARCHIVE 2023 DESK CALENDAR  
 
-テキストの回転は仕様で出来ませんでした囧(うあぁああああーなんでー)  
+テキストの回転は仕様で出来ませんでした。  
 ※Rainlender Lite Version 2.20.1にて確認
 
 ## 概要(重要)
