@@ -10,7 +10,7 @@ Write-Host "start downLoad"
 foreach($csv in $objcsv)
 {
     Write-Host "[" $i "/" $max "]" $csv.FullNameJP "(" $csv.LastName $csv.FirstName ")"
-    $extention = [System.IO.Path]::GetExtension($csv.HaloImageURL) 
+    $extention = [System.IO.Path]::GetExtension($csv.HaloImageURL).Split('?')[0]
     $outputfile = $OUTPUT_DIR + "HALO_" + $csv.LastName + "_" + $csv.FirstName + $extention
     Invoke-WebRequest -Uri $csv.HaloImageURL -OutFile $outputfile
     $i++

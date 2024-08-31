@@ -10,7 +10,7 @@ Write-Host "start downLoad"
 foreach($csv in $objcsv)
 {
     Write-Host "[" $i "/" $max "]" $csv.Name
-    $extention = [System.IO.Path]::GetExtension($csv.URL)
+    $extention = [System.IO.Path]::GetExtension($csv.URL).Split('?')[0]
     if($csv.UsageType -eq 1)
     {
         $outputfile = $OUTPUT_DIR + "ICON_" + $csv.Name + $extention
