@@ -1,7 +1,7 @@
 ﻿# HALO画像をダウンロード
 $INPUT_FILE = $PWD.Path + "\csv\halo-icon.csv"
 $OUTPUT_DIR = $PWD.Path + "\temp\halo\"
-$objcsv = Import-Csv $INPUT_FILE
+$objcsv = @(Import-Csv $INPUT_FILE)
 
 $i = 1
 $max = $objcsv.count
