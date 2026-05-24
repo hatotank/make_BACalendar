@@ -27,7 +27,7 @@ while($day.CompareTo($END_DAY) -le 0)
         $body += "UID:" + (New-Guid).ToString() + $CRLF
         $body += "SUMMARY:" + $list.LastName + " " + $list.FirstName + $CRLF
         $body += "CATEGORIES:" + $list.LastName + " " + $list.FirstName + $CRLF
-        $body += "LAST-MODIFIED:" + (Get-Date).ToString("yyyyMMddHHmmssZ") + $CRLF
+        $body += "LAST-MODIFIED:" + (Get-Date).ToString("yyyyMMddTHHmmssZ") + $CRLF
         $body += "RRULE:FREQ=YEARLY;BYMONTHDAY=" + ($day).ToString("%d") + ";BYMONTH=" + ($day).ToString("%M") + $CRLF
         $body += "DTSTART;VALUE=DATE:" + ($day).ToString("yyyyMMdd") + $CRLF
         $body += "DTEND;VALUE=DATE:" + ($day).AddDays(1).ToString("yyyyMMdd") + $CRLF
