@@ -22,12 +22,12 @@ while($day.CompareTo($END_DAY) -le 0)
     foreach($list in $lists)
     {
         $body += "BEGIN:VEVENT" + $CRLF
-        $body += "DTSTAMP:" + (Get-Date).ToString("yyyyMMddThhmmssZ") + $CRLF
+        $body += "DTSTAMP:" + (Get-Date).ToString("yyyyMMddTHHmmssZ") + $CRLF
         $body += "TRANSP:OPAQUE" + $CRLF
         $body += "UID:" + (New-Guid).ToString() + $CRLF
         $body += "SUMMARY:" + $list.LastName + " " + $list.FirstName + $CRLF
         $body += "CATEGORIES:" + $list.LastName + " " + $list.FirstName + $CRLF
-        $body += "LAST-MODIFIED:" + (Get-Date).ToString("yyyyMMddThhmmssZ") + $CRLF
+        $body += "LAST-MODIFIED:" + (Get-Date).ToString("yyyyMMddHHmmssZ") + $CRLF
         $body += "RRULE:FREQ=YEARLY;BYMONTHDAY=" + ($day).ToString("%d") + ";BYMONTH=" + ($day).ToString("%M") + $CRLF
         $body += "DTSTART;VALUE=DATE:" + ($day).ToString("yyyyMMdd") + $CRLF
         $body += "DTEND;VALUE=DATE:" + ($day).AddDays(1).ToString("yyyyMMdd") + $CRLF
