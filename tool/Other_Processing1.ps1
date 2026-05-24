@@ -14,6 +14,7 @@ $img_src = $img_src.Clone($rect, $img_src.PixelFormat)
 $img_dst = New-Object System.Drawing.Bitmap($WIDTH,$HEIGHT)
 
 $graphics = [System.Drawing.Graphics]::FromImage($img_dst)
+$ia = New-Object System.Drawing.Imaging.ImageAttributes
 $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
 $graphics.DrawImage($img_src, (New-Object System.Drawing.Rectangle(0, 0, $WIDTH, $HEIGHT)),0,0,$img_src.Width,$img_src.Height,[System.Drawing.GraphicsUnit]::Pixel,$ia)
 
@@ -30,7 +31,7 @@ $cm.Matrix11 = $cm.Matrix10 + $saturation;
 $cm.Matrix20 = $cm.Matrix21 = ([float]1 - $saturation) * $bwgt;
 $cm.Matrix22 = $cm.Matrix20 + $saturation;
 $cm.Matrix33 = $cm.Matrix44 = [float]1;
-$ia = New-Object System.Drawing.Imaging.ImageAttributes
+
 $ia.SetColorMatrix($cm)
 
 $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
