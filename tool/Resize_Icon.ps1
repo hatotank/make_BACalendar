@@ -21,6 +21,7 @@ foreach ($item in $objitems)
     $img_dst.Save(($OUTPUT_DIR + $item.Name.Replace("_","-").ToLower()), [System.Drawing.Imaging.ImageFormat]::Png)
     $img_dst.Dispose()
     $img_src.Dispose()
+    $graphics.Dispose()
     $i++
 }
 Write-Host "end resize"

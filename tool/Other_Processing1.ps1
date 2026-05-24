@@ -12,7 +12,7 @@ $rect = New-Object System.Drawing.Rectangle(46,10,598,602)
 # トリミング
 $img_src = $img_src.Clone($rect, $img_src.PixelFormat)
 $img_dst = New-Object System.Drawing.Bitmap($WIDTH,$HEIGHT)
-
+    
 $graphics = [System.Drawing.Graphics]::FromImage($img_dst)
 $ia = New-Object System.Drawing.Imaging.ImageAttributes
 $graphics.InterpolationMode = [System.Drawing.Drawing2D.InterpolationMode]::HighQualityBicubic
@@ -55,5 +55,6 @@ $graphics.DrawImage($img_src, (New-Object System.Drawing.Rectangle(0, 0, $WIDTH,
 $img_dst.Save(($OUTPUT_DIR + "today-white.png"), [System.Drawing.Imaging.ImageFormat]::Png)
 $img_dst.Dispose()
 $img_src.Dispose()
+$graphics.Dispose()
 
 Write-Host "end processing"
